@@ -16,9 +16,9 @@ $(function () {
     // showflag.find('.show-area-main').before(str);
   });
   /*左侧进度条主要内容的显示隐藏——通过标题按钮控制*/
-  $('body').on('click','.show-content-btn', function () {
+  $('body').on('click','.process', function () {
     $(".thirdSection p:first-child").addClass('main-left-select-active');
-    var  MoveTop= $(this).closest('.process');
+    var  MoveTop= $(this);
     $(".article .process:nth-of-type(1)").before(MoveTop);
     // var  firstChange=$(".article .process:first-child");
     // firstChange.after($(".article .process:last-child"));
